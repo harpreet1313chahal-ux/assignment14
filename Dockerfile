@@ -2,25 +2,25 @@
 FROM node:18-alpine
 
 # Set the working directory
-WORKDIR /chahal_harpreet_ui_garden_build_checks
+WORKDIR /harpreet_chahal_assignment14
 
 # Copy package files
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm install
 
-# Copy project files
+# Copy the rest of the project
 COPY . .
 
 # Build the React application
 RUN npm run build
 
-# Install the static file server
+# Install serve
 RUN npm install -g serve
 
-# Expose port 8018
+# Expose application port
 EXPOSE 8018
 
-# Serve the production build
+# Start the production build
 CMD ["serve", "-s", "build", "-l", "8018"]

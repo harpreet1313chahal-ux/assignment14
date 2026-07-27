@@ -1,24 +1,40 @@
-# Assignment 13 – UI Component Library Build Checks
+# Assignment 14 – Portfolio Website
 
 ## Student Name
 
 Harpreet Chahal
 
+---
+
 ## Project Description
 
-This project extends the UI Component Library from Assignment 12 by adding automated code quality checks using Husky, GitHub Actions, and Docker.
+This project is a personal portfolio website built using React and TypeScript.
 
-The project includes:
+It showcases my projects, technical skills, learning resources, and development environment while reusing components created in Assignment 13.
+
+---
+
+## Features
+
+- Home page
+- Work page
+- Skills page
+- Resources page
+- Developer Setup page
+- Navigation using React Router
+- Reusable UI components from Assignment 13
+- Responsive design
+- Docker support
+
+---
+
+## Technologies Used
 
 - React
 - TypeScript
-- Storybook
+- React Router
 - Styled Components
 - Docker
-- Husky
-- ESLint
-- Prettier
-- GitHub Actions
 
 ---
 
@@ -30,71 +46,32 @@ npm install
 
 ---
 
-## Run Storybook
+## Run the Application
 
 ```bash
-npm run storybook
+npm start
 ```
 
-Storybook will be available at:
+The application will be available at:
 
 ```
-http://localhost:6006
+http://localhost:3000
 ```
 
 ---
 
-## Run Prettier
+## Build the Project
 
 ```bash
-npm run format
+npm run build
 ```
-
----
-
-## Run ESLint
-
-```bash
-npm run lint
-```
-
----
-
-## Run Tests
-
-```bash
-npm test -- --watchAll=false
-```
-
----
-
-## Husky Pre-commit Checks
-
-Before every commit, Husky automatically runs:
-
-- Prettier
-- ESLint
-- Tests
-
-If any check fails, the commit is blocked.
-
----
-
-## GitHub Actions
-
-GitHub Actions automatically runs the following checks for every push and pull request:
-
-- npm install
-- npm run format
-- npm run lint
-- npm test -- --watchAll=false
 
 ---
 
 ## Build Docker Image
 
 ```bash
-docker build -t chahal_harpreet_coding_assignment13 .
+docker build -t harpreet_chahal_assignment14 .
 ```
 
 ---
@@ -102,7 +79,7 @@ docker build -t chahal_harpreet_coding_assignment13 .
 ## Run Docker Container
 
 ```bash
-docker run --name chahal_harpreet_coding_assignment13 -p 8018:8018 chahal_harpreet_coding_assignment13
+docker run --name harpreet_chahal_assignment14 -p 8018:8018 harpreet_chahal_assignment14
 ```
 
 ---
@@ -115,30 +92,27 @@ http://localhost:8018
 
 ---
 
-## Working Directory
+## Project Structure
 
 ```
-/chahal_harpreet_ui_garden_build_checks
+src/
+├── components/
+├── pages/
+│   ├── Home.tsx
+│   ├── Work.tsx
+│   ├── Skills.tsx
+│   ├── Resources.tsx
+│   └── DeveloperSetup.tsx
+├── App.tsx
+└── index.tsx
 ```
 
 ---
 
-## Docker Container Name
+## GitHub Repository
+
+Add your GitHub repository link here after pushing your project.
 
 ```
-chahal_harpreet_coding_assignment13
+https://github.com/harpreet1313chahal-ux/assignment14
 ```
-
----
-
-## Technologies Used
-
-- React
-- TypeScript
-- Storybook
-- Styled Components
-- Docker
-- Husky
-- ESLint
-- Prettier
-- GitHub Actions
