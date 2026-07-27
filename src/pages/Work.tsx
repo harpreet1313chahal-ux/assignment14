@@ -22,7 +22,13 @@ const Work = () => {
         <li>Docker</li>
       </ul>
 
-      <a href="https://github.com/YOUR_GITHUB_LINK">GitHub Repository</a>
+      <a
+        href="https://github.com/harpreet1313chahal-ux/assignment14"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View GitHub Repository
+      </a>
 
       <hr />
 
@@ -41,8 +47,12 @@ const Work = () => {
         <li>Bootstrap</li>
       </ul>
 
-      <a href="https://github.com/harpreet1313chahal-ux/assignment14">
-        GitHub Repository
+      <a
+        href="https://github.com/harpreet1313chahal-ux/assignment14"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View GitHub Repository
       </a>
     </div>
   );

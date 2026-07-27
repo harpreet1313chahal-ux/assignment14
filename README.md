@@ -10,7 +10,7 @@ Harpreet Chahal
 
 This project is a personal portfolio website built using React and TypeScript.
 
-It showcases my projects, technical skills, learning resources, and development environment while reusing components created in Assignment 13.
+The website showcases my projects, technical skills, learning resources, and development environment while reusing components created in Assignment 13. React Router is used to navigate between multiple pages.
 
 ---
 
@@ -35,6 +35,8 @@ It showcases my projects, technical skills, learning resources, and development 
 - React Router
 - Styled Components
 - Docker
+- Git
+- GitHub
 
 ---
 
@@ -92,27 +94,6 @@ http://localhost:8018
 
 ---
 
-## Project Structure
-
-```
-src/
-├── components/
-├── pages/
-│   ├── Home.tsx
-│   ├── Work.tsx
-│   ├── Skills.tsx
-│   ├── Resources.tsx
-│   └── DeveloperSetup.tsx
-├── App.tsx
-└── index.tsx
-```
-
----
-
 ## GitHub Repository
 
-Add your GitHub repository link here after pushing your project.
-
-```
 https://github.com/harpreet1313chahal-ux/assignment14
-```
