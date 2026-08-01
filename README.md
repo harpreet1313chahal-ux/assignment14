@@ -16,15 +16,15 @@ The website showcases my projects, technical skills, learning resources, and dev
 
 ## Features
 
-- Home page
-- Work page
-- Skills page
-- Resources page
-- Developer Setup page
-- Navigation using React Router
+- Home (Basic Information)
+- Work
+- Skills
+- Resources
+- Developer Setup
+- React Router navigation
 - Reusable UI components from Assignment 13
 - Responsive design
-- Docker support
+- Production Docker deployment
 
 ---
 
@@ -48,13 +48,13 @@ npm install
 
 ---
 
-## Run the Application
+## Run the Application (Development)
 
 ```bash
 npm start
 ```
 
-The application will be available at:
+The development server runs at:
 
 ```
 http://localhost:3000
@@ -70,7 +70,7 @@ npm run build
 
 ---
 
-## Build Docker Image
+## Build the Docker Image
 
 ```bash
 docker build -t harpreet_chahal_assignment14 .
@@ -78,10 +78,10 @@ docker build -t harpreet_chahal_assignment14 .
 
 ---
 
-## Run Docker Container
+## Run the Docker Container
 
 ```bash
-docker run --name harpreet_chahal_assignment14 -p 8018:8018 harpreet_chahal_assignment14
+docker run --name chahal_harpreet_coding_assignment14 -p 5575:5575 harpreet_chahal_assignment14
 ```
 
 ---
@@ -89,7 +89,7 @@ docker run --name harpreet_chahal_assignment14 -p 8018:8018 harpreet_chahal_assi
 ## Open the Application
 
 ```
-http://localhost:8018
+http://localhost:5575
 ```
 
 ---

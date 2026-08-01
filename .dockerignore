@@ -1,0 +1,10 @@
+node_modules
+build
+.git
+.gitignore
+.vscode
+.storybook
+.husky
+assignment12
+storybook-log.txt
+debug-storybook.log

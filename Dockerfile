@@ -1,26 +1,25 @@
-# Use the official Node.js 18 Alpine image
 FROM node:18-alpine
 
-# Set the working directory inside the container
-WORKDIR /harpreet_chahal_assignment14
+# Working directory
+WORKDIR /chahal_harpreet_final_site
 
 # Copy package files
 COPY package*.json ./
 
-# Install project dependencies
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the application
+# Copy application files
 COPY . .
 
-# Build the production React application
+# Build production React app
 RUN npm run build
 
-# Install the static file server
+# Install static file server
 RUN npm install -g serve
 
-# Expose the application port
-EXPOSE 8018
+# Expose required port
+EXPOSE 5575
 
-# Run the production build
-CMD ["serve", "-s", "build", "-l", "8018"]
+# Serve production build
+CMD ["serve", "-s", "build", "-l", "5575"]
